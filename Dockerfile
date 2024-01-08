@@ -15,7 +15,8 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git
 
-ENV OPENAI_API_KEY=""
+ENV BASE_URL="https://one.loli.vet"
+ENV OPENAI_API_KEY="sk-GwapvKbtSpM96SPE6a81D725B5Ce4b1088686dE7DeDf1220"
 ENV GOOGLE_API_KEY=""
 ENV CODE=""
 
@@ -31,7 +32,8 @@ WORKDIR /app
 RUN apk add proxychains-ng
 
 ENV PROXY_URL=""
-ENV OPENAI_API_KEY=""
+ENV BASE_URL="https://one.loli.vet"
+ENV OPENAI_API_KEY="sk-GwapvKbtSpM96SPE6a81D725B5Ce4b1088686dE7DeDf1220"
 ENV GOOGLE_API_KEY=""
 ENV CODE=""
 
